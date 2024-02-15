@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .backgroundColor {
+    background-color: #873604;
+  }
+}
+
+@layer components {
+  .hello-world {
+    @apply text-5xl md:text-6xl lg:text-7xl font-black text-pink-800 md:text-yellow-700 lg:text-blue-800;
+  }
+  .btn {
+    @apply text-main border-2 border-solid border-transparent px-2 py-1 mx-2 hover:border-l-main active:border-l-transparent md:hover:border-b-main md:hover:border-l-transparent md:active:border-transparent;
+  }
+  .peerCheckBox {
+    @apply peer-checked:flex peer-checked:w-full peer-checked:p-8 peer-checked:z-20 peer-checked:bg-white peer-checked:absolute peer-checked:top-12 peer-checked:h-screen;
+  }
+}
+
+@layer utilities {
+  .myStyle {
+    border: 2px solid red;
+  }
+}
